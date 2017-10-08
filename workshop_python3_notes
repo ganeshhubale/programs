@@ -1,0 +1,54 @@
+import this
+id(variable)
+-5 to 256
+
+from copy import deepcopy
+deepcopy()
+tuple--login
+dictonaery--hashing property
+
+ for i,j in dictonary.items():
+...     print("key",i)
+...     print("value",j)
+
+ for i,j in d.items():
+...     print("key",i)
+...     print("value",j)
+
+for i in d:
+...     print(i)
+
+for i in list1:
+...     print("ji")
+
+range(7)
+
+
+
+import os
+
+os.path.isfile("filna")
+
+os.path.isdir("filna")
+os.listdir("/etc")
+
+dir(sys)
+
+import sys
+import os
+sys.platform
+
+
+>>> sys.ps1="#"
+#
+#
+#
+#
+#
+#
+#
+#
+::
+
+
+#pypune
