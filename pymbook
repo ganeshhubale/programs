@@ -67,7 +67,7 @@ data and having particular methods to retrieve or manipulate it.
 list is mutable data structure where you can add/del/edit the values inside list
 
 
-1] insert()
+1] insert(positon,element)
 2] append()
 3] count()
 4] remove()
@@ -79,7 +79,7 @@ list is mutable data structure where you can add/del/edit the values inside list
 10] for x in a:
 
 -----------------
-tuple is immutable data structure where you cant add/del/edit the values in tuple
+tuple is immutable data structure where you can't add/del/edit the values in tuple
 
 
 1] type()
@@ -126,3 +126,28 @@ dict() can create dictionaries from tuples of key,value pair.
 >>> random.sample([1, 2, 3, 4, 5],  3)  # Choose 3 elements
 [4, 1, 5]
 --------------------
+24/10/2017
+------------------
+
+String
+------------
+s.split("")
+s.title()
+s.upper()
+s.lower()
+s.swapcase()
+s.isalnum()>>alpha numeric
+s.isalpha()>>only alphabets
+s.isdigit()
+s.islower()
+s.istitle()
+"-".join("hello ih")
+s.strip()
+s.lstrip()
+s.rstrip()
+s.find(string)
+s.startwith(string)
+s.endswith(string)
+s = z[::-1] >> s will contain reverse of z
+print("number of words %d" % (len(s.split(" "))))
+
