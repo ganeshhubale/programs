@@ -1,0 +1,52 @@
+parser = argparse.ArgumentParser(decription="about program")--> container to hold our arguments
+
+parser.add_argument("num", help="help text", type=int)
+args = parser.parse_args()
+ print args.num
+-----------------
+parser.add_argument("-n", "--number", metavar='', required=True, help="help text", type=int)
+
+explaination:
+
+1] n --> variable name 
+
+or
+
+   number --> optional argument name
+
+2] required = True --> argument is required to run a program
+3] metavar='' --> Null argument not allowed
+4] type=int --> type of argument, default is string
+5] help="write something" --> it is command description, will get this info after hitting -h
+
+-----------------
+optional argument
+
+parser.add_argument("--quiet", help="help text", action="store_true")
+
+-----------------
+mutually exclusive arguments
+
+1] you can select one option or another option, but not both
+2] this can be done with group
+3] automatically generates an output telling the user you can only pick one , should they try to use both
+
+group = parser.add_mutually_exclusive_group()
+group.add_argument("-w", "--verbose", action="store_true")
+group.add_argument("-q", "--quiet", action="store_true")
+
+if args.verbose:
+	print("-v selected")
+
+-----
+action = "store_true" --> when you give it an action i.e. store_true then default becomes false and when you call this flag then it will return you true
+
+-----
+------------------------
+why to use?
+
+1] argparse makes it easy to handle command line options and arguments 
+2] comes default with python 
+3] Generates and formats usage and help output
+4] allows dynamic data input to change the out put of your proge]ram
+
