@@ -2,10 +2,20 @@
 - Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
 - Notice that the solution set must not contain duplicate triplets.
 
-2. * Search in Rotated Sorted Array
-3. * Find Minimum in Rotated Sorted Array
-4. * Maximum Product Subarray
-5. * Maximum Subarray
+2. Search in Rotated Sorted Array
+- The "Search in Rotated Sorted Array" problem is a common question in coding interviews. It involves searching for a target element in a sorted array that has been rotated at some pivot. For example, the array [4, 5, 6, 7, 0, 1, 2] is a rotated version of [0, 1, 2, 4, 5, 6, 7].
+
+
+3. Find Minimum in Rotated Sorted Array
+- Given a rotated sorted array nums (with no duplicate elements), find the minimum element in the array.
+
+
+4. Maximum Product Subarray
+- Given an integer array nums, find the contiguous subarray that has the maximum product and return the product.
+
+5. Maximum Subarray
+- Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum, and return the sum.
+
 6. * Product of Array Except Self
 7. * Contains Duplicate
 8. * Best Time to Buy and Sell Stock

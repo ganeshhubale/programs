@@ -49,3 +49,6 @@ def threeSum(nums):
 # Example Usage:
 nums = [-1, 0, 1, 2, -1, -4]
 print(threeSum(nums))
+
+# Time complexity: O(n3)
+# Space complexity: O(k) where k are the triplets in array
