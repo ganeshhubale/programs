@@ -16,11 +16,27 @@
 5. Maximum Subarray
 - Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum, and return the sum.
 
-6. * Product of Array Except Self
-7. * Contains Duplicate
-8. * Best Time to Buy and Sell Stock
-9. * Two Sum
-10. * Finding Pairs With a Certain Sum
+6. Product of Array Except Self
+- You are given an integer array nums of length n, where 𝑛 ≥ 2. Return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
+
+7. Contains Duplicate
+- Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+
+8. Best Time to Buy and Sell Stock
+- You are given an array prices where prices[i] is the price of a given stock on the i-th day.
+You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+Return the maximum profit you can achieve. If you cannot achieve any profit, return 0.
+
+9. Two Sum
+- Given an array of integers nums and an integer target, return the indices of the two numbers such that they add up to target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You can return the answer in any order.
+
+10. Finding Pairs With a Certain Sum
+- Given an array of integers nums and an integer target, return all unique pairs of numbers in the array that add up to the target.
+You should not use the same element twice, and the order of the pairs does not matter.
+
+
 11. * Maximum Number of Occurrences of a Substring
 12. * Maximum Average Subarray I
 13. * Merge Two Sorted Lists
