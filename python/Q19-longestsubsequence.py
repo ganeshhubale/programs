@@ -2,6 +2,7 @@
 # Given two strings text1 and text2, return the length of their longest common subsequence. 
 # If there is no common subsequence, return 0.
 
+# NEED TO UNDERSTAND PROPERLY
 def longest_common_subsequence(text1, text2):
     """
     Find the length of the longest common subsequence between two strings.
