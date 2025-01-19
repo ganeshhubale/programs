@@ -67,9 +67,16 @@ In other words, one of s1's permutations is the substring of s2.
 - Given an array of integers nums and an integer k, return the maximum number of pairs (a, b) such that: a + b= k
 Each element in nums can only be used once in a pair.
 
-18. * Longest Common Subsequence
-19. * Subarray Product Less Than K
-20. * String to Integer (atoi)
+18. Longest Common Subsequence **Not solved**
+- The Longest Common Subsequence (LCS) problem is to find the length of the longest subsequence common to two strings. A subsequence is a sequence derived from another sequence by deleting some elements without changing the order of the remaining elements.
+
+19. Subarray Product Less Than K
+- Given an array of positive integers nums and an integer k, return the number of contiguous subarrays where the product of all elements in the subarray is less than k.
+
+20. String to Integer (atoi)
+- The String to Integer (atoi) function converts a string to a 32-bit signed integer (-2^31 to 2^31 -1).
+The function must strip any leading whitespace, handle optional signs, and stop at invalid characters or when the string ends.
+
 21. * Isomorphic Strings
 22. * Longest Palindromic Substring
 23. * Sort Characters By Frequency
