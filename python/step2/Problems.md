@@ -37,13 +37,36 @@ You can return the answer in any order.
 You should not use the same element twice, and the order of the pairs does not matter.
 
 
-11. * Maximum Number of Occurrences of a Substring
-12. * Maximum Average Subarray I
-13. * Merge Two Sorted Lists
-14. * Find Peak Element
-15. * Permutation in String
-16. * Longest Substring Without Repeating Characters
-17. * Max Number of K-Sum Pairs
+11. Maximum Number of Occurrences of a Substring **Not solved**
+- You are given a string s consisting of lowercase English letters. Your task is to find the maximum number of occurrences of any substring of s that satisfies the following conditions:
+    - The substring's length is between minLength and maxLength (inclusive).
+    - The substring contains at most maxLetters unique characters.
+    - Return the maximum number of occurrences of such substrings.
+
+12. Maximum Average Subarray I
+- You are given an integer array nums consisting of n elements and an integer k.
+Find the maximum average value of any contiguous subarray of size k. You need to return this maximum average as a floating-point number.
+
+13. Merge Two Sorted Lists
+- You are given the heads of two sorted linked lists, list1 and list2. Merge the two lists into a 
+single sorted linked list and return the head of the merged list. 
+The merged list should be made by splicing together the nodes of the first two lists.
+
+14. Find Peak Element
+- A peak element in an array is an element that is strictly greater than its neighbors. Given an integer array nums, find a peak element and return its index. If the array contains multiple peaks, return the index of any one of the peaks.
+
+15. Permutation in String
+- The Permutation in String problem is a common question that involves checking whether one string's permutation is a substring of another string.
+Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise.
+In other words, one of s1's permutations is the substring of s2.
+
+16. Longest Substring Without Repeating Characters
+- Given a string s, find the length of the longest substring without repeating characters.
+
+17. Max Number of K-Sum Pairs
+- Given an array of integers nums and an integer k, return the maximum number of pairs (a, b) such that: a + b= k
+Each element in nums can only be used once in a pair.
+
 18. * Longest Common Subsequence
 19. * Subarray Product Less Than K
 20. * String to Integer (atoi)
