@@ -97,18 +97,30 @@ A palindrome is a string that reads the same forward and backward.
     - Input: A string s.
     - Output: The length of the longest substring that contains exactly two distinct characters.
 
-26. * Existence of a Substring in a String and Its Reverse
-27. * Best Time to Buy and Sell Stock II
-28. * Two Out of Three
-29. * Shortest String That Contains Three Strings
-30. * Number of Substrings Containing All Three Characters
+26. Existence of a Substring in a String and Its Reverse
+    - To check whether a substring exists in a string and also in its reverse, here is the explanation and implementation:
+
+27. Best Time to Buy and Sell Stock II
+    - The problem "Best Time to Buy and Sell Stock II" asks us to maximize the profit by performing multiple transactions
+
+28. Two Out of Three
+    - You are given three integer arrays, nums1, nums2, and nums3. A number is said to appear in two out of the three arrays if it exists in at least two of the arrays.
+    - Your task is to return a list of all such numbers in any order.
+
+29. Shortest String That Contains Three Strings **Not understood**
+    - You are given three strings a, b, and c. Your task is to find the shortest string that contains all three strings as substrings. 
+    - If there are multiple results of the same length, return any one of them.
+
+30. Number of Substrings Containing All Three Characters
+    - You are given a string s consisting of the characters 'a', 'b', and 'c'. Your task is to find the number of substrings that contain at least one occurrence of each of the characters 'a', 'b', and 'c'.
+
 31. * Remove K Digits
-32. * Find Peak Element
+32. Find Peak Element **Resolved in Q-14**
 33. * Minimum Operations to Reduce X to Zero
 34. * Find First and Last Position of Element in Sorted Array
 35. * Kth Largest Element in an Array
 36. * Two Sum II - Input Array Is Sorted
-37. * Valid Palindrome
+37. Valid Palindrome
 38. * Reverse Words in a String
 39. * Element Appearing More Than 25% In Sorted Array
 40. * Longest Consecutive Sequence
