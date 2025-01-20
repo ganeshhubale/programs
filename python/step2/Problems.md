@@ -77,11 +77,26 @@ Each element in nums can only be used once in a pair.
     - The String to Integer (atoi) function converts a string to a 32-bit signed integer (-2^31 to 2^31 -1).
 The function must strip any leading whitespace, handle optional signs, and stop at invalid characters or when the string ends.
 
-21. * Isomorphic Strings
-22. * Longest Palindromic Substring
-23. * Sort Characters By Frequency
-24. * Rotate Array
-25. * Maximum Length Substring With Two Occurrences
+21. Isomorphic Strings
+    - Given two strings s and t, determine if they are isomorphic. 
+Two strings are isomorphic if the characters in one string can be replaced to get the other string, preserving the order of characters. 
+No two characters may map to the same character, but a character may map to itself.
+
+22. Longest Palindromic Substring
+    - Given a string s, find the longest substring in s that is a palindrome.
+A palindrome is a string that reads the same forward and backward.
+
+23. Sort Characters By Frequency
+    - Given a string s, return a string where the characters are sorted by frequency of occurrence in descending order.
+
+24. Rotate Array
+    - Given an array nums and an integer k, rotate the array to the right by k steps.
+
+25. Maximum Length Substring With Two Occurrences **Not understood**
+    - To find the maximum length substring with exactly two distinct characters (also known as the "Longest Substring with Two Occurrences"), we can use a sliding window approach.
+    - Input: A string s.
+    - Output: The length of the longest substring that contains exactly two distinct characters.
+
 26. * Existence of a Substring in a String and Its Reverse
 27. * Best Time to Buy and Sell Stock II
 28. * Two Out of Three

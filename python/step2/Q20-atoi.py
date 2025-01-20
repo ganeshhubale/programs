@@ -48,12 +48,12 @@ def my_atoi(s: str) -> int:
         i +=1
     return sign * result
 
-# print(my_atoi("42"))
-# print(my_atoi("   -42"))           # Output: -42
-# print(my_atoi("4193 with words"))  # Output: 4193
-# print(my_atoi("words and 987"))    # Output: 0
+print(my_atoi("42"))               # Output: 42
+print(my_atoi("   -42"))           # Output: -42
+print(my_atoi("4193 with words"))  # Output: 4193
+print(my_atoi("words and 987"))    # Output: 0
 print(my_atoi("-91283472332"))     # Output: -2147483648 (clamped to INT_MIN)
-# print(my_atoi("+1"))
+print(my_atoi("+1")) 
 
 # Time complexity: O(n)
 # space complexity: O(1)
