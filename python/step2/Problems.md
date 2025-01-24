@@ -114,10 +114,17 @@ A palindrome is a string that reads the same forward and backward.
 30. Number of Substrings Containing All Three Characters
     - You are given a string s consisting of the characters 'a', 'b', and 'c'. Your task is to find the number of substrings that contain at least one occurrence of each of the characters 'a', 'b', and 'c'.
 
-31. * Remove K Digits
+31. Remove K Digits
+    - To remove exactly k digits from a given non-negative number represented as a string to make the resulting number as small as possible.
+    
 32. Find Peak Element **Resolved in Q-14**
-33. * Minimum Operations to Reduce X to Zero
-34. * Find First and Last Position of Element in Sorted Array
+33. Minimum Operations to Reduce X to Zero
+    - The "Minimum Operations to Reduce X to Zero" problem involves finding the minimum number of operations required to reduce a given integer X to zero by removing elements from the ends of an array. This is a common sliding window problem in algorithmic problem-solving.
+
+34. Find First and Last Position of Element in Sorted Array
+    - The "Find First and Last Position of Element in Sorted Array" problem requires locating the first and last indices of a given target value in a sorted array. 
+    If the target is not found, return [-1, -1].
+
 35. * Kth Largest Element in an Array
 36. * Two Sum II - Input Array Is Sorted
 37. Valid Palindrome
