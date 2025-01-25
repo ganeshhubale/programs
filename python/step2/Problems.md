@@ -125,10 +125,18 @@ A palindrome is a string that reads the same forward and backward.
     - The "Find First and Last Position of Element in Sorted Array" problem requires locating the first and last indices of a given target value in a sorted array. 
     If the target is not found, return [-1, -1].
 
-35. * Kth Largest Element in an Array
-36. * Two Sum II - Input Array Is Sorted
+35. Kth Largest Element in an Array
+    - Find the Kth largest element in an array.
+
+36. Two Sum II - Input Array Is Sorted
+    - Given a 1-indexed sorted array of integers numbers and a target integer target, return the indices of the two numbers that add up to target.
+
 37. Valid Palindrome
-38. * Reverse Words in a String
+    - Check if string is palindrome. E.g: Nayan
+
+38. Reverse Words in a String
+    - Given an input string s, reverse the order of the words. A word is defined as a sequence of non-space characters. The input string may contain leading or trailing spaces, and multiple spaces between words. Ensure that the result string has only a single space separating words, with no leading or trailing spaces.
+
 39. * Element Appearing More Than 25% In Sorted Array
 40. * Longest Consecutive Sequence
 41. * Find the Winner of an Array Game
@@ -145,7 +153,9 @@ A palindrome is a string that reads the same forward and backward.
 52. * Range Sum of BST
 53. * Add Two Numbers
 54. * Merge Strings Alternately
-55. * Palindrome Number
+55. Palindrome Number
+    - The Palindrome Number problem checks whether a given integer is a palindrome. A palindrome is a number that reads the same backward as forward.
+    
 56. * Valid Parentheses
 57. * Find the Index of the First Occurrence in a String
 58. * Minimum Size Subarray Sum
