@@ -143,8 +143,12 @@ A palindrome is a string that reads the same forward and backward.
 40. Longest Consecutive Sequence
     - Given an unsorted array of integers, find the length of the longest sequence of consecutive integers.
 
-41. * Find the Winner of an Array Game
-42. * Design Authentication Manager
+41. Find the Winner of an Array Game
+    - The "Find the Winner of an Array Game" problem involves finding the winner in a game based on comparisons within an array.
+
+42. Design Authentication Manager **Unique**
+    - The Authentication Manager problem involves designing a system that manages authentication tokens with expiration times. The system should support operations to add new tokens, renew existing tokens, and count valid tokens at any point in time.
+
 43. Contains Duplicate
     - The "Contains Duplicate" problem asks if there are any duplicate elements in an array.
     - Given an integer array nums, return True if any value appears at least twice in the array, and False if every element is distinct.
