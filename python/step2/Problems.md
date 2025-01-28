@@ -137,13 +137,21 @@ A palindrome is a string that reads the same forward and backward.
 38. Reverse Words in a String
     - Given an input string s, reverse the order of the words. A word is defined as a sequence of non-space characters. The input string may contain leading or trailing spaces, and multiple spaces between words. Ensure that the result string has only a single space separating words, with no leading or trailing spaces.
 
-39. * Element Appearing More Than 25% In Sorted Array
-40. * Longest Consecutive Sequence
+39. Element Appearing More Than 25% In Sorted Array
+    - Finding an element that appears more than 25% of the time in a sorted array
+
+40. Longest Consecutive Sequence
+    - Given an unsorted array of integers, find the length of the longest sequence of consecutive integers.
+
 41. * Find the Winner of an Array Game
 42. * Design Authentication Manager
-43. * Contains Duplicate
+43. Contains Duplicate
+    - The "Contains Duplicate" problem asks if there are any duplicate elements in an array.
+    - Given an integer array nums, return True if any value appears at least twice in the array, and False if every element is distinct.
+
 44. * Valid Palindrome II
-45. * Subarray Sum Equals K
+45. Subarray Sum Equals K
+    - you are given an array of integers and a target sum, k. You need to find the total number of contiguous subarrays whose sum equals k.
 46. * Minimum Deletions to Make Character Frequencies Unique
 47. * Unique Number of Occurrences
 48. * Fizz Buzz
@@ -156,18 +164,49 @@ A palindrome is a string that reads the same forward and backward.
 55. Palindrome Number
     - The Palindrome Number problem checks whether a given integer is a palindrome. A palindrome is a number that reads the same backward as forward.
     
-56. * Valid Parentheses
-57. * Find the Index of the First Occurrence in a String
+56. Valid Parentheses
+    - Given a string containing just the characters '(', ')', '{', '}', '[', ']', determine if the input string is valid.
+    
+57. Find the Index of the First Occurrence  of a substring in a String
+    - To find the index of the first occurrence of a substring in a string 
+
 58. * Minimum Size Subarray Sum
 59. * Is Subsequence
 60. * Integer to Roman
 61. * Roman to Integer
 62. * Trapping Rain Water
 63. * Longest Common Prefix
-64. * Length of Last Word
-65. * Candy
-66. * Gas Station
-67. * Insert Delete GetRandom O(1)
-68. * H-Index
-69. * Jump Game
-70. * Jump Game II
+64. Length of Last Word
+    - To find the length of the last word in a string
+
+65. Candy
+    - The Candy problem is a classic greedy algorithm problem. Let me explain the problem, the approach, and an example in detail.
+    - There are n children standing in a line, and each child is assigned a rating value (an integer). You need to distribute candies to the children such that:
+
+    - Each child gets at least 1 candy.
+    - A child with a higher rating than their neighbors must get more candies than their neighbors.
+    - You need to determine the minimum number of candies required.
+
+66. Gas Station
+    - The Gas Station problem is a classic greedy algorithm problem. Here's the problem statement and its solution:
+    - You have n gas stations along a circular route, where the amount of gas at station i is given by gas[i].
+You also have a car with an unlimited gas tank, but it costs cost[i] of gas to travel from station i to station i+1 (the next station).
+You begin the journey with an empty tank at one of the gas stations. Return the starting gas station index if you can travel around the circuit once in the clockwise direction; otherwise, return -1.
+
+67. Insert Delete GetRandom O(1)
+    - The problem "Insert Delete GetRandom O(1)" asks you to design a data structure that supports the following operations in constant time:
+    - Insert(val): Inserts an item val into the data structure. Returns True if the item was not already present, otherwise returns False.
+    - Remove(val): Removes an item val from the data structure if it exists. Returns True if the item was present, otherwise returns False.
+    - GetRandom(): Returns a random element from the data structure. Each element must have the same probability of being returned.
+
+68. H-Index
+    - The H-Index is a metric that quantifies the productivity and citation impact of a researcher based on their publications.
+    - Given an array citations where each element represents the number of citations for a specific paper, determine the H-Index for the researcher.
+    - The H-Index is defined as the maximum value of h such that the researcher has at least h papers with h or more citations, and the rest have no more than h citations.
+
+69. Jump Game
+    - The Jump Game is a popular algorithmic problem that can be solved using greedy algorithms or dynamic programming.
+    - You are given an array of non-negative integers nums, where each element represents your maximum jump length at that position. Your task is to determine if you can reach the last index starting from the first index.
+
+70. Jump Game II
+    - You are given an array of non-negative integers nums, where each element represents your maximum jump length at that position. Your task is to find the minimum number of jumps needed to reach the last index.

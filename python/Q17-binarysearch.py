@@ -1,6 +1,6 @@
 # 11. Implement binary search. - square_root
 
-def sq_root(sq, precision=0.00001):
+def sq_root(sq, precision=0.000001):
 
     if sq < 2:
         return sq
@@ -17,11 +17,12 @@ def sq_root(sq, precision=0.00001):
             right = mid
         else:
             left = mid
+    print(left, right)
     return (left+right) / 2
 
-print("Square root of 25 -> ", sq_root(25))
-print("Square root of 17 -> ", sq_root(17))
-print("Square root of 99 -> ", sq_root(99))
+print("\nSquare root of 25 -> ", sq_root(25))
+print("\nSquare root of 17 -> ", sq_root(17))
+print("\nSquare root of 99 -> ", sq_root(99))
 print("Square root of 0 -> ", sq_root(0))
 print("Square root of 1 -> ", sq_root(1))
 print("Square root of 9 -> ", sq_root(9))

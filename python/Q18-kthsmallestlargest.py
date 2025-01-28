@@ -43,6 +43,11 @@ arr = [7, 10, 4, 3, 20, 15]
 print("3rd smallest:", quickselect(arr, 3))  # Output: 7
 
 
+arr = [7, 7,7,7,7,7,7,543,23,3534,]
+print("3rd Largest:", quickselect_largest(arr, 3))  # Output: 7
+
+arr = [5,5,5,5,5,5,5,5,5,5, 1,2,2,455]
+print("3rd smallest:", quickselect(arr, 3))  # Output: 7
 # Time complexity - O(n)
 # Space complexity - O(logN)
 
