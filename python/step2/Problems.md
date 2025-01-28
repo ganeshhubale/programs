@@ -157,7 +157,9 @@ A palindrome is a string that reads the same forward and backward.
 45. Subarray Sum Equals K
     - you are given an array of integers and a target sum, k. You need to find the total number of contiguous subarrays whose sum equals k.
 46. * Minimum Deletions to Make Character Frequencies Unique
-47. * Unique Number of Occurrences
+47. Unique Number of Occurrences
+    - The Unique Number of Occurrences problem involves determining whether the frequency of each element in an array is unique. This means no two elements in the array should have the same frequency of occurrence.
+
 48. * Fizz Buzz
 49. * Climbing Stairs
 50. * Longest Common Prefix
@@ -178,7 +180,9 @@ A palindrome is a string that reads the same forward and backward.
 59. * Is Subsequence
 60. * Integer to Roman
 61. * Roman to Integer
-62. * Trapping Rain Water
+62. Trapping Rain Water
+    - The Trapping Rain Water problem involves calculating how much water can be trapped between the heights of bars after a rainstorm.
+
 63. * Longest Common Prefix
 64. Length of Last Word
     - To find the length of the last word in a string
@@ -186,7 +190,6 @@ A palindrome is a string that reads the same forward and backward.
 65. Candy
     - The Candy problem is a classic greedy algorithm problem. Let me explain the problem, the approach, and an example in detail.
     - There are n children standing in a line, and each child is assigned a rating value (an integer). You need to distribute candies to the children such that:
-
     - Each child gets at least 1 candy.
     - A child with a higher rating than their neighbors must get more candies than their neighbors.
     - You need to determine the minimum number of candies required.
@@ -194,8 +197,8 @@ A palindrome is a string that reads the same forward and backward.
 66. Gas Station
     - The Gas Station problem is a classic greedy algorithm problem. Here's the problem statement and its solution:
     - You have n gas stations along a circular route, where the amount of gas at station i is given by gas[i].
-You also have a car with an unlimited gas tank, but it costs cost[i] of gas to travel from station i to station i+1 (the next station).
-You begin the journey with an empty tank at one of the gas stations. Return the starting gas station index if you can travel around the circuit once in the clockwise direction; otherwise, return -1.
+    You also have a car with an unlimited gas tank, but it costs cost[i] of gas to travel from station i to station i+1 (the next station).
+    You begin the journey with an empty tank at one of the gas stations. Return the starting gas station index if you can travel around the circuit once in the clockwise direction; otherwise, return -1.
 
 67. Insert Delete GetRandom O(1)
     - The problem "Insert Delete GetRandom O(1)" asks you to design a data structure that supports the following operations in constant time:
