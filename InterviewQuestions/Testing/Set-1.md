@@ -1,10 +1,19 @@
-1. Design patterns : Singleton , Factory
-- The Singleton pattern ensures that a class has only one instance and provides a global point of access to it. This is often used to manage shared resources like configuration settings, logging, or database connections.
+1. **Design patterns : Singleton , Factory**
+    - The Singleton pattern ensures that a class has only one instance and provides a global point of access to it. This is often used to manage shared resources like configuration settings, logging, or database connections.
+    - The Factory pattern provides a way to create objects without specifying the exact class of object that will be created. This is useful for creating objects based on certain conditions or configurations.
 
-- The Factory pattern provides a way to create objects without specifying the exact class of object that will be created. This is useful for creating objects based on certain conditions or configurations.
-
-2. program to find correct IPV4 address
-3. Test plan and Test strategy?
+2. **Playwright with POM for UI and API testing. which pattern you will use?**
+    - The Page Object Model (POM) in Playwright (or any UI automation framework) is typically implemented using the Factory Pattern, not the Singleton Pattern.
+    - Why Factory Pattern?
+        - In POM, each page class is instantiated separately when needed, often through a Page Factory method.
+        It allows dynamic object creation for different test cases without reusing the same instance across tests.
+        Useful for handling different pages and their elements efficiently.
+    - Why Not Singleton?
+        - The Singleton Pattern ensures a single instance of a class across an application.
+        Using a singleton for POM could lead to state issues when running tests in parallel, as the same instance would be shared.
+        Playwright itself follows a new browser context per test approach, making the singleton less practical for managing page objects.
+        Thus, POM with Playwright aligns more with the Factory Pattern, allowing flexible and scalable test automation.
+3. **Test plan and Test strategy?**
 - A Test Plan is a detailed document that outlines the how, what, when, and who of the testing process for a specific project or release. It is usually project-specific and focuses on the implementation of the testing effort.
 - A Test Strategy is a high-level document that outlines the overall approach and methodology of the testing process for the organization or product. It is less detailed and typically static for a project or organization.
 
@@ -20,7 +29,7 @@
 | **Flexibility**     | Changes with project updates.                    | Rarely changes unless a new methodology is adopted. |
 
 
-4. Techniques of Blackbox testing.
+4. **Techniques of Blackbox testing.**
 - Black box testing focuses on verifying the functionality of a system without knowing its internal code or implementation. The goal is to validate that the application works as expected by testing inputs and outputs.
     - Equivalence Partitioning
     - Boundary Value Analysis (BVA)
@@ -42,7 +51,7 @@
 | **Use Case Testing**         | Test real-world user workflows.                     | Add-to-cart and checkout process.             |
 
 
-5. Example for Boundary value Analysis.
+5. **Example for Boundary value Analysis.**
 - Boundary Value Analysis is a testing technique that focuses on testing the values at the boundaries (both valid and invalid) of input ranges since errors often occur at these points.
 - Scenario: Login system with a password field
     - The system accepts passwords between 6 to 12 characters.
@@ -55,7 +64,7 @@
 | TC004             | 13 (above maximum)       | Fail: Display error message | Invalid boundary value |
 
 
-6. git clone and git fork?
+6. **git clone and git fork?**
 - Use git clone when you want a local copy of an existing repository for direct work (e.g., when you're part of the project).
 - Use git fork when you want to contribute to a project but don’t have direct access, allowing you to make changes and submit a pull request.
 
@@ -74,7 +83,7 @@
 | **Example**           | `git clone https://github.com/user/repo.git`                 | Fork the repository on GitHub and clone your fork using: `git clone https://github.com/yourusername/repo.git` |
 
 
-7. git pull and git fetch?
+7. **git pull and git fetch?**
 - Comparison:
 
 | **Aspect**           | **`git pull`**                                              | **`git fetch`**                                             |
@@ -89,8 +98,8 @@
 | **Typical Workflow** | Used when you’re ready to integrate the latest changes into your local branch. | Used when you want to review remote changes before merging them into your local branch. |
 | **Risk of Conflicts**| Higher, since it merges changes automatically.              | Lower, since no merge occurs until you explicitly decide to. |
 
-8. Types of integration testing
-
+8. **Types of integration testing**
+   
 | **Type**                    | **Description**                                                                                     | **Example Use Case**                                         |
 |-----------------------------|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
 | **Big Bang Integration Testing** | All components or modules are integrated simultaneously and tested as a whole.                   | When the system is fully developed and ready for integration testing. |
@@ -102,7 +111,7 @@
 | **Interface Integration Testing** | Focuses on testing the interfaces between different modules or components.                        | Ensuring that two modules correctly exchange data and work as expected through their interfaces. |
 | **Regression Integration Testing** | Testing that integration does not break any previously working functionality after new modules are added. | After adding a new feature, checking if existing integrations still work. |
 
-9. Difference between Path and Query Parameters with an example
+9. **Difference between Path and Query Parameters with an example**
 - Path parameters are typically required and part of the URL path, used to specify a specific resource.
 - Query parameters are optional and used to modify or filter the data returned by the API.
 
@@ -116,15 +125,58 @@
 | **Example**          | `GET /users/{userId}` where `userId` is a path parameter. | `GET /users?age=25&sort=desc` with `age` and `sort` as query parameters. |
 | **Separation Character** | Separated by `/` in the URL path.                      | Separated by `&` in the URL after `?`.                    |
 
-10. What is a singleton Design Pattern? How do you implement that?
-11. Write the Top 5 test cases for Booking Coupons.
+10. **What is a singleton Design Pattern? How do you implement that?**
+    - The **Singleton Design Pattern** ensures that a class has only **one instance** and provides a **global point of access** to that instance. It's commonly used in scenarios where you want to control access to shared resources, such as configuration settings, logging, or database connections.
+
+### **Key Characteristics**:
+- **Single Instance**: Only one instance of the class is created, even if multiple requests are made.
+- **Global Access**: The instance is accessible globally, typically through a static method.
+- **Lazy Initialization**: The instance is created only when it's needed (not before).
+
+### **How to Implement the Singleton Pattern (in Python)**:
+
+```python
+class Singleton:
+    _instance = None  # Class variable to hold the instance
+
+    def __new__(cls):
+        # Check if an instance already exists
+        if cls._instance is None:
+            # Create a new instance if it doesn't exist
+            cls._instance = super().__new__(cls)
+        return cls._instance  # Return the same instance every time
+
+# Usage
+singleton1 = Singleton()
+singleton2 = Singleton()
+
+# Check if both references point to the same object
+print(singleton1 is singleton2)  # True
+```
+
+### **Steps in the Code**:
+1. **`_instance`**: A class variable that holds the single instance.
+2. **`__new__`**: This method is responsible for controlling object creation. It checks if the instance already exists. If it does, it returns the existing one; if not, it creates a new instance.
+
+### **Advantages of Singleton**:
+- **Controlled Access**: Ensures only one instance of a class exists.
+- **Global Access**: Provides a global access point for that instance.
+- **Resource Management**: Suitable for shared resources like database connections.
+
+### **Drawbacks**:
+- **Global State**: It introduces global state in the system, which can make testing and debugging harder.
+- **Hidden Dependencies**: It may lead to hidden dependencies between classes, making code less modular.
+
+The Singleton pattern is useful in situations where having multiple instances would be inefficient or undesirable (e.g., database connections or configuration managers).
+
+12. **Write the Top 5 test cases for Booking Coupons.**
 - Validate Coupon Code Functionality: Verify if the system accepts valid coupon codes and applies the correct discount.
 -  Invalid Coupon Code Handling: Verify that the system handles invalid coupon codes correctly.
 - Coupon Code Application on Eligible Items Only: Ensure that the coupon is applied only to eligible items or categories.
 - Verify Coupon Usage Limits: Verify that a coupon can be used only within its usage limits (e.g., one-time use, maximum use per user).
 - Expiry Date of Coupon: Verify that the coupon expires after its validity period.
 
-12. What is serialization and deserialization?
+12. **What is serialization and deserialization?**
 - Serialization and Deserialization are concepts used in data processing and communication, particularly when working with different programming languages, systems, or storage formats. They refer to the conversion of data between different formats for storage or transmission.
 - Serialization is the process of converting an object or data structure into a format that can be easily stored, transferred, or persisted. Typically, this format is a byte stream, JSON, XML, or binary format.
 - Deserialization is the reverse process of serialization. It involves converting the serialized data (such as JSON, XML, or byte streams) back into its original data structure or object format.
@@ -137,7 +189,7 @@
 | **Process**        | Converts object to string/byte format.        | Converts string/byte format back to object.   |
 
 
-13. What is the Difference between status codes 401 and 402?
+13. **What is the Difference between status codes 401 and 402?**
 - 401 Unauthorized is about authentication (ensuring the user is who they say they are), whereas 402 Payment Required is about payment (requiring the user to pay for access).
 
 | **Aspect**              | **401 Unauthorized**                                            | **402 Payment Required**                                           |
@@ -149,7 +201,7 @@
 | **Common Response**     | A prompt for login credentials or token to authenticate.         | A message requesting payment or providing instructions on how to pay. |
 | **Example Message**     | `"Unauthorized: Please log in to access this page."`             | `"Payment Required: Please complete your payment to access this service."` |
 
-14. What are the Major challenges that come into the picture when you do parallel testing
+14. **What are the Major challenges that come into the picture when you do parallel testing?**
 - Challenges:
 
 | **Challenge**                              | **Description**                                                                                      |
@@ -174,7 +226,7 @@
     - Test Stability: Work on stabilizing flaky tests before attempting parallel execution.
     - Monitoring and Logging: Implement robust logging and monitoring mechanisms to track failures and debug parallel executions.
 
-15. How do you calculate the Automation effort and how do you track that?
+15. **How do you calculate the Automation effort and how do you track that?**
 - Automation effort refers to the amount of time and resources required to design, develop, and maintain automated tests. It's essential to have a strategy for calculating and tracking this effort to ensure efficient resource allocation and better project planning.
 
 - Steps to Calculate Automation Effort:
@@ -223,7 +275,7 @@ Some common metrics for tracking automation efficiency include:
     Maintenance Overhead: Time spent updating and maintaining automation scripts over time.
     By tracking these metrics and using the above methods, you can manage and optimize automation efforts effectively.
 
-16. How do you set priorities for test automation, which test needs to be automated First?
+16. **How do you set priorities for test automation, which test needs to be automated First?**
 - Prioritization Example
     First Priority: Core business functionalities like login, payment, user registration.
     Second Priority: Regression tests, smoke tests, or tests involving high-risk areas.
@@ -271,7 +323,7 @@ Some common metrics for tracking automation efficiency include:
 | **Data-Driven Tests**     | Tests that require different sets of input data to validate various scenarios can be automated and executed across multiple combinations. |
 
 
-17. How do you set test case priorities for your team?
+17. **How do you set test case priorities for your team?**
 - Setting test case priorities for a team is an important part of ensuring that the most critical features are tested first and that testing efforts are focused where they will have the most impact. Here's how you can effectively set test case priorities:
 
 - Categorize Test Cases Based on Risk and Business Impact: High, Medium, Low
@@ -293,60 +345,60 @@ Some common metrics for tracking automation efficiency include:
 - Conclusion:
     - By considering risk, business impact, usage frequency, test complexity, and integration with CI/CD, you can prioritize test cases effectively. This ensures that your testing efforts are directed toward the areas that matter most, saving time and resources while improving the quality of your application.
 
-18. What are the challenges you face during API Testing?
+18. **What are the challenges you face during API Testing?**
 
-    1. Lack of Proper Documentation
+    1. **Lack of Proper Documentation**
     Challenge: APIs often come with limited or poor documentation, which makes it difficult to understand the expected inputs, outputs, and error handling mechanisms.
     Impact: This leads to unclear test case creation and makes it harder to determine the correct test scenarios.
     Solution: Collaborate with developers or review the source code to create accurate test cases.
-    2. Authentication and Authorization
+    2. **Authentication and Authorization**
     Challenge: Many APIs require complex authentication mechanisms such as OAuth, API keys, or tokens.
     Impact: If not handled properly, it may lead to difficulties in sending requests and receiving responses, and may expose security vulnerabilities.
     Solution: Automate the authentication and token refresh process to ensure smooth API testing.
-    3. Limited or No Test Data
+    3. **Limited or No Test Data**
     Challenge: APIs often lack access to realistic test data or provide a limited set of test data.
     Impact: This makes it difficult to test edge cases or use cases involving dynamic data inputs.
     Solution: Use data generation tools or mock data services to create realistic test data.
-    4. Versioning and Backward Compatibility
+    4. **Versioning and Backward Compatibility**
     Challenge: APIs may evolve over time, and new versions can break backward compatibility.
     Impact: This complicates testing since you need to ensure that both the old and new versions of the API work seamlessly.
     Solution: Versioning management and backward compatibility tests should be incorporated to ensure no breakage in older API versions.
-    5. Response Time and Performance
+    5. **Response Time and Performance**
     Challenge: APIs must perform efficiently, especially under heavy load. Performance-related issues are difficult to detect during basic functional testing.
     Impact: Slow response times can affect user experience and the overall system's performance.
     Solution: Integrate performance and load testing into API testing to assess how the API behaves under stress.
-    6. Dependency on Other Services
+    6. **Dependency on Other Services**
     Challenge: Many APIs depend on third-party services, databases, or external systems.
     Impact: Failure of these dependencies can cause API testing to fail or give inaccurate results.
     Solution: Use mocking and stubbing techniques to simulate external dependencies and isolate the API for testing.
-    7. Handling Multiple Formats and Protocols
+    7. **Handling Multiple Formats and Protocols**
     Challenge: APIs may support multiple formats (JSON, XML, CSV, etc.) or protocols (HTTP, WebSockets, gRPC, etc.).
     Impact: It requires testing across various input/output formats and protocols, which increases the complexity of the testing process.
     Solution: Automate tests to handle different formats and protocols based on the API's specifications.
-    8. Security Testing
+    8. **Security Testing**
     Challenge: API security is a critical concern. APIs often expose sensitive data, and improper handling can lead to vulnerabilities such as SQL injection, XSS, or information leakage.
     Impact: This can lead to data breaches or other security incidents.
     Solution: Perform regular security testing, including penetration testing and vulnerability assessments, to identify weaknesses in the API.
-    9. Rate Limiting and Throttling
+    9. **Rate Limiting and Throttling**
     Challenge: APIs may implement rate limiting and throttling to prevent abuse or overuse of resources.
     Impact: These mechanisms can cause test failures if not properly handled, and the API may return errors when the rate limit is exceeded.
     Solution: Incorporate rate-limiting handling into the test scripts and ensure that the system behaves as expected when the rate limit is hit.
-    10. Inconsistent Data and Error Handling
+    10. **Inconsistent Data and Error Handling**
     Challenge: APIs might not return consistent or useful error messages, which makes debugging difficult.
     Impact: This can lead to confusion during test execution when errors are not meaningful, impacting test case execution and troubleshooting.
     Solution: Ensure proper error handling and consistent responses are in place, and document error codes for easier identification.
-    11. Testing APIs with Complex Business Logic
+    11. **Testing APIs with Complex Business Logic**
     Challenge: Some APIs involve complex business logic that needs to be verified for various inputs.
     Impact: Verifying all permutations of the business logic can be time-consuming and challenging.
     Solution: Identify key business flows and automate test scenarios that cover most common use cases and edge cases.
-    12. Handling Asynchronous APIs
+    12. **Handling Asynchronous APIs**
     Challenge: Some APIs are asynchronous and return results after a delay or upon completion of background tasks.
     Impact: It can be challenging to test the API when responses aren’t immediate, and you need to wait for processing to complete.
     Solution: Implement timeouts and polling mechanisms in your test scripts to handle asynchronous behavior.
-    - Summary:
+    - **Summary**:
     API testing is essential for ensuring a system’s functionality, performance, and security. However, challenges such as lack of documentation, security issues, dependencies on third-party services, and managing complex business logic can make the testing process difficult. To overcome these challenges, it's important to adopt best practices, automate wherever possible, and utilize tools for mock services, performance testing, and security assessments.
 
-19. UI test automation framework structure
+19. **UI test automation framework structure**
 - Project Directory Structure:
 
 ```
@@ -445,11 +497,11 @@ UI-Automation-Framework/
     Capture screenshots for failed test cases to help with debugging.
 - Automation Framework Enhancements
     - Cross-browser Testing: Implement logic to run tests across multiple browsers (Chrome, Firefox, Edge).
-    Parallel Execution: Use tools like Selenium Grid or BrowserStack for running tests in parallel across different environments.
+    - Parallel Execution: Use tools like Selenium Grid or BrowserStack for running tests in parallel across different environments.
     - Continuous Integration (CI): Integrate the framework with Jenkins or another CI tool to run tests automatically on each code commit.
     - Error Handling and Retry Mechanisms: Implement retry logic to handle flaky tests.
 
-20. automation capabilities in your framework
+20. **Automation capabilities in your framework**
 - These capabilities allow the framework to be flexible, scalable, and efficient, ultimately improving the quality of the product being tested while also reducing the manual effort required for UI testing.
 
 
