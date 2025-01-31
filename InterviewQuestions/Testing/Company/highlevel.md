@@ -16,3 +16,9 @@ Q.5 what is API 400 and 500 series?
 Q.6 How to build automation framework from scrach?
 
 Q.7 Give me test cases for upload file feature with jpg and pdf support and 5mb size
+
+Q.8 can we use nested it or describe blocks
+
+Q.9 Tell me API responses with its meaning
+
+Q.10 Write test cases for a lift

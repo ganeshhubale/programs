@@ -67,7 +67,7 @@ In other words, one of s1's permutations is the substring of s2.
     - Given an array of integers nums and an integer k, return the maximum number of pairs (a, b) such that: a + b= k
 Each element in nums can only be used once in a pair.
 
-18. Longest Common Subsequence **Not solved**
+18. Longest Common Subsequence **Not understood**
     - The Longest Common Subsequence (LCS) problem is to find the length of the longest subsequence common to two strings. A subsequence is a sequence derived from another sequence by deleting some elements without changing the order of the remaining elements.
 
 19. Subarray Product Less Than K
@@ -153,20 +153,48 @@ A palindrome is a string that reads the same forward and backward.
     - The "Contains Duplicate" problem asks if there are any duplicate elements in an array.
     - Given an integer array nums, return True if any value appears at least twice in the array, and False if every element is distinct.
 
-44. * Valid Palindrome II
+44. Valid Palindrome II
+    - Given a string s, return True if it can be a palindrome after deleting at most one character.
+
 45. Subarray Sum Equals K
     - you are given an array of integers and a target sum, k. You need to find the total number of contiguous subarrays whose sum equals k.
-46. * Minimum Deletions to Make Character Frequencies Unique
+
+46. Minimum Deletions to Make Character Frequencies Unique
+    - Given a string s, return the minimum number of deletions required to make the frequencies of each character unique.
+
 47. Unique Number of Occurrences
     - The Unique Number of Occurrences problem involves determining whether the frequency of each element in an array is unique. This means no two elements in the array should have the same frequency of occurrence.
 
-48. * Fizz Buzz
-49. * Climbing Stairs
-50. * Longest Common Prefix
-51. * Recyclable and Low Fat Products
-52. * Range Sum of BST
-53. * Add Two Numbers
-54. * Merge Strings Alternately
+48. Fizz Buzz
+    - FizzBuzz is a classic programming problem often used in coding interviews. The task is simple:
+    Print numbers from 1 to N.
+    For multiples of 3, print "Fizz" instead of the number.
+    For multiples of 5, print "Buzz" instead of the number.
+    For multiples of both 3 and 5, print "FizzBuzz".
+
+49. Climbing Stairs
+    - You are climbing a staircase with N steps. You can climb either 1 step or 2 steps at a time. 
+    Your task is to determine the total number of distinct ways you can reach the top.
+
+50. Longest Common Prefix
+    - Given an array of strings, find the longest common prefix among all the strings. If no common prefix exists, return an empty string "".
+
+51. Recyclable and Low Fat Products **SQL**
+    - This is a typical SQL query problem that requires filtering products based on their attributes.
+
+52. Range Sum of Binary search tree
+    - Given the root of a Binary Search Tree (BST) and two integers low and high, return the sum of all values of nodes with values in the inclusive range [low, high].
+
+53. Add Two Numbers
+    - You are given two non-empty linked lists representing two non-negative integers. 
+    The digits are stored in reverse order, and each node contains a single digit. 
+    Add the two numbers and return the sum as a linked list.
+
+54. Merge Strings Alternately
+    - You are given two strings, word1 and word2.
+    Merge the two strings by adding letters in alternating order, starting with word1.
+    If a string is longer than the other, append the additional letters at the end.
+
 55. Palindrome Number
     - The Palindrome Number problem checks whether a given integer is a palindrome. A palindrome is a number that reads the same backward as forward.
     
@@ -176,10 +204,21 @@ A palindrome is a string that reads the same forward and backward.
 57. Find the Index of the First Occurrence  of a substring in a String
     - To find the index of the first occurrence of a substring in a string 
 
-58. * Minimum Size Subarray Sum
-59. * Is Subsequence
-60. * Integer to Roman
-61. * Roman to Integer
+58. Minimum Size Subarray Sum
+    - Given an array of positive integers nums and an integer target, return the minimum length of a contiguous subarray whose sum is greater than or equal to target.
+    If no such subarray exists, return 0.
+
+59. Is Subsequence
+    - Given two strings s and t, return True if s is a subsequence of t, or False otherwise.
+
+    A subsequence of a string is a sequence that appears in the same relative order, but not necessarily consecutively. 
+
+60. Integer to Roman ** greedy **
+    - Given an integer num, convert it to a Roman numeral.
+
+61. Roman to Integer
+    - Given an Roman numeral, convert it to a integer num.
+
 62. Trapping Rain Water
     - The Trapping Rain Water problem involves calculating how much water can be trapped between the heights of bars after a rainstorm.
 
