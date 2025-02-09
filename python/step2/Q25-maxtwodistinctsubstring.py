@@ -12,16 +12,14 @@ def longest_substring_two_distinct(s):
     for right in range(len(s)):
         # Add the current character to the map
         char_map[s[right]] = char_map.get(s[right], 0) + 1
-        print(char_map)
+
         # If we have more than 2 distinct characters, shrink the window
         while len(char_map) > 2:
-            print(left, char_map[s[left]])
+
             char_map[s[left]] -= 1
             if char_map[s[left]] == 0:
-                print(s[left])
                 del char_map[s[left]]  # Remove the character completely if its count is 0
             left += 1
-            print(left)
 
         # Update the maximum length of the window
         max_length = max(max_length, right - left + 1)
