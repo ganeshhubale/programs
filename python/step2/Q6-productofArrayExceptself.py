@@ -27,25 +27,6 @@ print(product_array_except_self(nums))
 
 # Optimized solution
 
-def product_array_except_self(nums):
-    result = []
-    n = len(nums)
-    if n < 2:
-        return result
-    
-    for i in range(n):
-        j = 0
-        product = 1
-        while j < n:
-            if j != i:
-                product = product * nums[j]
-            j += 1
-        result.append(product)
-    return result
-
-nums = [0, 0, 0]
-print(product_array_except_self(nums))
-
 # Time complexity: O(n)
 # Space complexity: O(n)
 
