@@ -19,7 +19,7 @@ def fizzBuzz(n):
         elif i%5 == 0:
             output.append("Buzz")
         else: 
-            output.append()
+            output.append(i)
         i += 1
 
     return ', '.join(str(val) for val in output)
