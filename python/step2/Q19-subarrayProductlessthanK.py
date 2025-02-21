@@ -8,7 +8,6 @@ def subarray_product_less_than_k(nums, k):
         return 0
 
     start = 0
-    end = 0
     count = 0
     product = 1
     pairs = []
